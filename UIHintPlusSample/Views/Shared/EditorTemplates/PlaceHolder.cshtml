@@ -1,0 +1,6 @@
+﻿@model string
+@{ 
+    var placeHolderText = Html.GetAdditionalValue("PlaceHolderText");
+    var nameForModel = Html.NameForModel();
+}
+<input id="@nameForModel" name="@nameForModel" type="text" placeholder="@placeHolderText" class="control-label" />
